@@ -256,7 +256,7 @@ int main(void)
       if(ts_status == TS_OK)
       {
     	  /* Display touch screen active debug */
-          printf("Touch screen is go!\r\n");
+          printf("Touch screen is go!!\r\n");
       }
 
   /* USER CODE END 2 */

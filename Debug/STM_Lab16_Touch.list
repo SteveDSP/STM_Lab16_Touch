@@ -567,7 +567,7 @@ int main(void)
  80006b2:	d102      	bne.n	80006ba <main+0xde>
       {
     	  /* Display touch screen active debug */
-          printf("Touch screen is go!\r\n");
+          printf("Touch screen is go!!\r\n");
  80006b4:	481f      	ldr	r0, [pc, #124]	; (8000734 <main+0x158>)
  80006b6:	f00f f9c1 	bl	800fa3c <puts>
 
