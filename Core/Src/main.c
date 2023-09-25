@@ -236,7 +236,7 @@ int main(void)
      if(lcd_status == LCD_OK)
      {
     	 /* Display touch screen active debug */
-         printf("LCD is go!\r\n");
+         printf("LCD is active!\r\n");
      }
 
 

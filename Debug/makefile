@@ -79,8 +79,8 @@ all: main-build
 main-build: STM_Lab16_Touch.elf secondary-outputs
 
 # Tool invocations
-STM_Lab16_Touch.elf STM_Lab16_Touch.map: $(OBJS) $(USER_OBJS) /Users/staff/STM32CubeIDE/workspace_1.13.1/STM_Lab16_Touch/STM32F769NIHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "STM_Lab16_Touch.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/Users/staff/STM32CubeIDE/workspace_1.13.1/STM_Lab16_Touch/STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM_Lab16_Touch.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STM_Lab16_Touch.elf STM_Lab16_Touch.map: $(OBJS) $(USER_OBJS) D:\Documents\GitHub\STM_Lab16_Touch\STM32F769NIHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "STM_Lab16_Touch.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\Documents\GitHub\STM_Lab16_Touch\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM_Lab16_Touch.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
